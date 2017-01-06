@@ -1,21 +1,21 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-#home {
-  position: relative;
-  top: 0px;
-  color: #ffffff;
-  visibility: hidden;
+html, body {
+margin: 0;
+padding: 0;
+height: 100%;
 }
 
 @media (min-width: 320px) {
   #projectrow2 {
     padding-top: 60px;
   }
+
+}
+
+#home {
+   position: relative;
+   top: 0px;
+   color: #ffffff;
+   visibility:hidden;
 }
 
 #wrapper {
@@ -23,7 +23,9 @@ body {
   position: relative;
 }
 
-#header {}
+#header {
+ 
+}
 
 #footer {
   width: 100%;
@@ -42,8 +44,7 @@ body {
   opacity: 0.9;
 }
 
-.navbar li a,
-.navbar .navbar-brand {
+.navbar li a, .navbar .navbar-brand {
   color: #d5d5d5 !important;
 }
 
@@ -64,27 +65,27 @@ body {
 }
 
 .navbar-nav li.active a {
-  color: #fff !important;
-  background-color: #29292c !important;
+    color: #fff !important;
+    background-color: #29292c !important;
 }
 
 .navbar-default .navbar-toggle {
-  border-color: transparent;
+    border-color: transparent;
   background-color: #29292c !important;
 }
 
 .open .dropdown-toggle {
-  color: #555;
-  background-color: #29292c !important;
+    color: #555 ;
+    background-color: #29292c !important;
 }
 
 .dropdown-menu li a {
-  color: #eeeeee !important;
-  background-color: #29292c !important;
+    color: #eeeeee !important;
+    background-color: #29292c !important;
 }
 
 .dropdown-menu li a:hover {
-  background-color: #a5a5a5 !important;
+    background-color: #a5a5a5 !important;
 }
 
 .container {
@@ -101,14 +102,15 @@ body {
 
 .proj {
   border: 10px solid transparent;
+  margin-top: 0px;
+  margin-right: auto;
   margin-bottom: 25px;
+  margin-left: auto;
   display: block;
   text-align: center;
   max-width: 100%;
   height: auto;
   opacity: 0.8;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .proj:hover {
@@ -116,21 +118,11 @@ body {
   opacity: 0.9;
 }
 
-#contact {
-  background-color: #29292c;
-  opacity: 0.9;
-  color: #ffffff;
-  padding-bottom: 90px !important;
-  padding-top: 50px;
-}
-
 footer {
-  position: absolute;
+position: absolute;
   top: 100%;
   left: 50%;
-  top: 65px;
 }
-
 
 /* CSS for sidebar */
 
@@ -187,4 +179,5 @@ footer {
   .sideButtons {
     visibility: hidden;
   }
+
 }
