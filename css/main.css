@@ -19,6 +19,12 @@ body {
   }
 }
 
+@media (max-width: 1080px) {
+  .sideButtons {
+    visibility: hidden;
+  }
+}
+
 #wrapper {
   min-height: 100%;
   position: relative;
@@ -112,8 +118,7 @@ body {
 }
 
 .proj:hover {
-  border: 6px solid transparent;
-  opacity: .9;
+  opacity: 1;
 }
 
 #contact {
@@ -182,8 +187,15 @@ footer {
   border-color: #999999;
 }
 
-@media (max-width: 1080px) {
-  .sideButtons {
-    visibility: hidden;
-  }
+#projectrow1 {
+  padding-top: 20px;
+}
+
+#projectrow2 {
+  padding-top: 40px;
+}
+
+#projectrow3 {
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
