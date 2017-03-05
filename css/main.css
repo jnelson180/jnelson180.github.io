@@ -2,12 +2,52 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%;
+  height: 1%;
   background: url('http://jakenelson.comxa.com/misc/bgs/abstract-2.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#projectrow1 {
+  padding-top: 20px;
+  height: 100%;
+}
+
+#projectrow2 {
+  padding-top: 20px;
+  height: 100%;
+  display: none;
+}
+
+#projectrow3 {
+  padding-top: 20px;
+  height: 100%;
+  display: none;
+}
+
+#nextButtonDiv{
+margin: 0 auto;
+  }
+
+#niceFooter {
+  position: static;
+  bottom: 20px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 4%;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+}
+
+nextButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #home {
@@ -28,6 +68,20 @@ body {
     visibility: hidden;
   }
 }
+
+@media (max-width: 768px) {
+
+  #projectrow1, #projectrow2, #projectrow3, #projectrow4, #projectrow5 {
+    display: inline;
+    visibility: visible;
+  }
+
+  #nextButtonDiv {
+    display: none;
+  }
+}
+
+
 
 #wrapper {
   position: relative;
@@ -86,8 +140,9 @@ body {
   background-color: #a5a5a5 !important;
 }
 
-.container {
+#projects {
   margin-top: 120px !important;
+
 }
 
 .demo {
@@ -177,15 +232,9 @@ body {
   border-color: #999999;
 }
 
-#projectrow1 {
-  padding-top: 20px;
-}
-
-#projectrow2 {s
-  padding-top: 40px;
-}
-
-#projectrow3 {
-  padding-top: 40px;
-  padding-bottom: 20px;
+#projectRow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
