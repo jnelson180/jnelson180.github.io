@@ -59,7 +59,6 @@ nextButton {
 
 @media (min-width: 320px) {
   #projectrow2 {
-    padding-top: 60px;
   }
 }
 
@@ -74,6 +73,10 @@ nextButton {
   #projectrow1, #projectrow2, #projectrow3, #projectrow4, #projectrow5 {
     display: inline;
     visibility: visible;
+  }
+
+  body {
+    background-image: none;
   }
 
   #nextButtonDiv {
@@ -230,11 +233,4 @@ nextButton {
   text-shadow: 0px 1px 5px;
   border-width: 1px;
   border-color: #999999;
-}
-
-#projectRow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
