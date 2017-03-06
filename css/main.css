@@ -3,11 +3,70 @@ body {
   margin: 0;
   padding: 0;
   height: 1%;
+}
+
+/* Show in Large desktops and laptops */
+@media (min-width: 1200px) {
+
+body {
   background: url('http://jakenelson.comxa.com/misc/bgs/abstract-2.jpg');
   background-attachment: scroll;
   background-size: auto;
   background-repeat: repeat;
+    }
+
 }
+
+/*Hide in Other Small Devices */
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  body {
+    background: url('http://jakenelson.comxa.com/misc/bgs/abstract-2.jpg');
+    background-attachment: scroll;
+    background-size: auto;
+    background-repeat: repeat;
+      }
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  body {
+    background: url('http://jakenelson.comxa.com/misc/bgs/abstract-2.jpg');
+    background-attachment: scroll;
+    background-size: auto;
+    background-repeat: repeat;
+      }
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+  body {
+    background: url('http://jakenelson.comxa.com/misc/bgs/abstract-2.jpg');
+    background-attachment: scroll;
+    background-size: auto;
+    background-repeat: repeat;
+      }
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+  body {
+    background-image: none;
+      }
+
+}
+/* Thanks to stom on SO
+  http://stackoverflow.com/questions/20754428/how-to-remove-background-image-for-mobile-site */ 
+
+
+/* may need to make container full width ? */
 
 #projectrow1 {
   padding-top: 20px;
@@ -62,12 +121,6 @@ nextButton {
   }
 }
 
-@media (max-width: 1080px) {
-  .sideButtons {
-    visibility: hidden;
-  }
-}
-
 @media (max-width: 768px) {
 
   #projectrow1, #projectrow2, #projectrow3, #projectrow4, #projectrow5 {
@@ -76,13 +129,25 @@ nextButton {
   }
 
   body {
-    background-image: none;
+    background: none;
   }
 
   #nextButtonDiv {
     display: none;
   }
 }
+
+@media (max-width: 1080px) {
+  .sideButtons {
+    visibility: hidden;
+  }
+
+    body {
+      background-image: none;
+    }
+}
+
+
 
 
 
