@@ -4,9 +4,9 @@ body {
   padding: 0;
   height: 1%;
   background: url('http://jakenelson.comxa.com/misc/bgs/abstract-2.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: auto;
+  background-repeat: repeat;
 }
 
 #projectrow1 {
