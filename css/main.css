@@ -63,7 +63,7 @@ body {
 
 }
 /* Thanks to stom on SO
-  http://stackoverflow.com/questions/20754428/how-to-remove-background-image-for-mobile-site */ 
+  http://stackoverflow.com/questions/20754428/how-to-remove-background-image-for-mobile-site */
 
 
 /* may need to make container full width ? */
@@ -80,6 +80,12 @@ body {
 }
 
 #projectrow3 {
+  padding-top: 20px;
+  height: 100%;
+  display: none;
+}
+
+#projectrow4 {
   padding-top: 20px;
   height: 100%;
   display: none;
