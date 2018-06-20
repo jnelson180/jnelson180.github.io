@@ -4,7 +4,11 @@ body {
   width: 100%;
   height: 100%;
   color: white;
-  background-color: black;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: #000000;
 }
 
 html {
@@ -49,6 +53,26 @@ a {
 a:focus, a:hover {
   text-decoration: none;
   color: #1d9b6c;
+}
+
+#about {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+    background: #000000; /* Old browsers */
+    background: -moz-linear-gradient(top, #22223e 0%, #000000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #22223e 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #22223e 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#contact {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+    background: #000000; /* Old browsers */
+    background: -moz-linear-gradient(top, #000000 0%, #22223e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #000000 0%,#22223e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #000000 0%,#22223e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+footer {
+  background: #22223e;
 }
 
 #mainNav {
@@ -187,7 +211,7 @@ a:focus, a:hover {
 .download-section {
   color: white;
   /* background: url("../img/downloads-bg.jpg") no-repeat center center scroll; */
-  background-color: black;
+  /* background-color: black; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
