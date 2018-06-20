@@ -55,6 +55,10 @@ a:focus, a:hover {
   color: #1d9b6c;
 }
 
+a, h1, h2, h3, h4, h5, h6, p, div, footer, header, body, section, li, button, nav {
+  user-select: none;
+}
+
 #about {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
     background: #000000; /* Old browsers */
