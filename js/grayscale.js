@@ -122,7 +122,7 @@
       <div class="col-lg-12 portfolio-item">
         <div>
           <div class="card-body">
-            <a href="${url}" class="plain"><iframe class="frame" scrolling="no" src="${url}"></iframe></a>
+            <a href="${url}" target="_blank" class="plain"><iframe class="frame" scrolling="no" src="${url}"></iframe></a>
             <br />
             <h4 class="card-title">
               <a href="${url}">${title}</a>
