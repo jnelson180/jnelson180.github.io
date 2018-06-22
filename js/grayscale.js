@@ -184,12 +184,13 @@ function toggleClass(element, classToToggle) {
 
   document.getElementById("projects").innerHTML=(String(cards).split(",").join(""));
 
-  document.getElementById("controls").innerHTML=`
-    <button onclick="prevBackground()">prev</button>
-    <button onclick="nextBackground()">next</button>
-    <button onclick="black()">color</button>
-    <button onclick="mask()">mask</button>
-    <b>${ pic }<b>
-  `;
+  // document.getElementById("controls").innerHTML=`
+  //   <button onclick="prevBackground()">prev</button>
+  //   <button onclick="nextBackground()">next</button>
+  //   <button onclick="black()">color</button>
+  //   <button onclick="mask()">mask</button>
+  //   <b>${ pic }<b>
+  // `;
+  
 })(jQuery); // End of use strict
 
