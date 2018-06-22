@@ -1,3 +1,43 @@
+let pic = 1;
+
+function nextBackground() {
+  if (pic < 34) {
+    pic++;
+  } else {
+    pic = 1;
+  }
+  document.getElementsByClassName("masthead")[0].style.background = `url(./img/${ pic }.jpg)`;
+}
+
+function prevBackground() {
+  if (pic < 35 && pic > 0) {
+    pic--;
+  } else {
+    pic = 34;
+  }
+  document.getElementsByClassName("masthead")[0].style.background = `url(./img/${ pic }.jpg)`;
+}
+
+function black() {
+  const el = document.getElementsByClassName("masthead")[0];
+  const className = "black";
+  toggleClass(el, className);
+}
+
+function mask() {
+  const el = document.getElementById("intro-div");
+  const className = "mask";
+  toggleClass(el, className);
+}
+
+function toggleClass(element, classToToggle) {
+  if (element.classList.contains(classToToggle)) {
+    element.classList.remove(classToToggle);
+  } else {
+    element.classList.add(classToToggle);
+  }
+}
+
 (function ($) {
   "use strict"; // Start of use strict
 
@@ -143,5 +183,13 @@
   });
 
   document.getElementById("projects").innerHTML=(String(cards).split(",").join(""));
+
+  document.getElementById("controls").innerHTML=`
+    <button onclick="prevBackground()">prev</button>
+    <button onclick="nextBackground()">next</button>
+    <button onclick="black()">color</button>
+    <button onclick="mask()">mask</button>
+    <b>${ pic }<b>
+  `;
 })(jQuery); // End of use strict
 
