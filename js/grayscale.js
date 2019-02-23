@@ -177,7 +177,7 @@ function toggleClass(element, classToToggle) {
   var createCard = function createCard(url, title, description, skills, image) {
     console.log({ image, title })
     const preview = image
-      ? `<img class="plain" src="${ image }" />`
+      ? `<a href="${ url }" target="_blank"><img class="plain" src="${ image }" /></a>`
       : `<a href={url} target="_blank" class="plain"><iframe class="frame" scrolling="no" src={url}></iframe></a>`
 
     return `
