@@ -343,7 +343,7 @@ footer {
   text-decoration: none;
   display: block;
   min-width: 320px;
-  min-height: 400px;
+  /* min-height: 400px; */
   width: 50vw;
   /* should be 90% on mobile */
   border: 2px inset white;
