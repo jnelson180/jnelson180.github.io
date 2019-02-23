@@ -338,15 +338,20 @@ footer {
   user-select: none;
 }
 
-a.plain {
+.plain {
   color: transparent;
   text-decoration: none;
   display: block;
   min-width: 320px;
   min-height: 400px;
   width: 50vw;
+  /* should be 90% on mobile */
+  border: 2px inset white;
   overflow: hidden;
   z-index: 1000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .card-body {

@@ -88,7 +88,7 @@ function toggleClass(element, classToToggle) {
       title: "Local Weather App",
       description: "A basic local weather app.",
       skills: "JavaScript/ES6, HTML, CSS",
-      image: "../img/weather.jpg"
+      image: "./img/weather.jpg"
     },
     // {
     //     url: "https://www.sunshinerising.net/",
@@ -101,42 +101,42 @@ function toggleClass(element, classToToggle) {
       title: "URL Shortener",
       description: "A URL shortener microservice used to return the client with an abbreviated URL from their input.",
       skills: "Javascript/ES6, Node.js, MongoDB, HTML, CSS",
-      image: "../img/smurl.jpg"
+      image: "./img/smurl.jpg"
     },
     {
       url: "http://codepen.io/JNelson180/full/gwaZKz",
       title: "Simon Says",
       description: "A Simon Says game mocked up in Javascript/HTML/CSS.",
       skills: "Javascript, jQuery, HTML, CSS",
-      image: "../img/simon.jpg"
+      image: "./img/simon.jpg"
     },
     {
       url: "http://codepen.io/JNelson180/full/zBaNqy",
       title: "Javascript Calculator",
       description: "A basic calculator app.",
       skills: "Javascript, HTML, CSS",
-      image: "../img/calc.jpg"
+      image: "./img/calc.jpg"
     },
     {
       url: "https://imglook.herokuapp.com/api/imagesearch/",
       title: "Image Search Metadata",
       description: "Provides JSON data of image search results.",
       skills: "Nodejs, Express, MongoDB, Javascript, HTML, CSS",
-      image: "../img/imglook.jpg"
+      image: "./img/imglook.jpg"
     },
     {
       url: "https://codepen.io/JNelson180/full/BpobRp/",
       title: "Javascript Piano",
       description: "Playable Javascript mini keyboard.",
       skills: "Javascript, HTML, CSS",
-      image: "../img/piano.jpg"
+      image: "./img/piano.jpg"
     },
     {
       url: "https://metafile-js.herokuapp.com/",
       title: "File metadata microservice",
       description: "Upload a file to view its metadata",
       skills: "Nodejs, Javascript, Express, Bootstrap",
-      image: "../img/metafile.jpg"
+      image: "./img/metadata.jpg"
     },
     // {
     //     url: "https://codepen.io/JNelson180/full/JrbBWX/",
@@ -144,40 +144,41 @@ function toggleClass(element, classToToggle) {
     //     description: "Dynamically generated bookshelf based on Goodreads API data.",
     //     skills: "Nodejs, Express, Heroku, MongoDB, Javascript, HTML, CSS"
     // },
-    {
-      url: "https://codepen.io/JNelson180/full/yOZJxQ/",
-      title: "Motivational Quote Machine",
-      description: "Motivational quote generator from external API.",
-      skills: "Javascript, HTML, CSS",
-      image: "../quote.jpg"
-    },
+    // {
+    //   url: "https://codepen.io/JNelson180/full/yOZJxQ/",
+    //   title: "Motivational Quote Machine",
+    //   description: "Motivational quote generator from external API.",
+    //   skills: "Javascript, HTML, CSS",
+    //   image: "../quote.jpg"
+    // },
     {
       url: "https://codepen.io/JNelson180/pen/EWBzLB",
       title: "Flexbox Bookshelf",
       description: "A flexbox bookshelf based on Goodreads user info.",
       skills: "Javascript, HTML, CSS",
-      image: "../bookshelf.jpg"
+      image: "./img/bookshelf.jpg"
     },
     {
       url: "https://codepen.io/JNelson180/full/Wxaybg/",
       title: "Pomodoro Clock",
       description: "Basic pomodoro clock app",
       skills: "Javascript, HTML, CSS",
-      image: "../pomodoro.jpg"
+      image: "./img/pomodoro.jpg"
     },
     {
       url: "https://codepen.io/JNelson180/full/vKbrkv/",
       title: "Tic Tac Toe",
       description: "Javascript tic tac toe game.",
       skills: "Javascript, jQuery, HTML, CSS",
-      image: "../tic.jpg"
+      image: "./img/tictactoe.jpg"
     }
   ];
 
   var createCard = function createCard(url, title, description, skills, image) {
+    console.log({ image, title })
     const preview = image
-      ? `<img class="plain" src={ image } />`
-      : `<a href="${url}" target="_blank" class="plain"><iframe class="frame" scrolling="no" src="${url}"></iframe></a>`
+      ? `<img class="plain" src="${ image }" />`
+      : `<a href={url} target="_blank" class="plain"><iframe class="frame" scrolling="no" src={url}></iframe></a>`
 
     return `
       <div class="col-lg-12 portfolio-item">
@@ -200,7 +201,7 @@ function toggleClass(element, classToToggle) {
   };
 
   var cards = cardData.map(function (c) {
-    return createCard(c.url, c.title, c.description, c.skills);
+    return createCard(c.url, c.title, c.description, c.skills, c.image);
   });
 
   document.getElementById("projects").innerHTML=(String(cards).split(",").join(""));
